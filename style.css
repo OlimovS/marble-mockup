@@ -1,0 +1,269 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------> Navigation <--------------------- */
+
+.navigation {
+   height: 100px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 5%;
+   padding-right: 5%;
+   background-color:#E5E5E5
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4E4E4E;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  padding: 1rem;
+  color: #4E4E4E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --------------------------> Welcome <-------------------------- */
+
+.slider {
+   background-image: url(images/main.png);
+   background-size: cover;
+   background-position: center;
+   height: calc(100vh - 100px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   padding: 0 5%;
+}
+
+.welcome {
+  text-align: center;
+}
+.welcome h1 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  letter-spacing: 1.1px;
+}
+
+.welcome h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  letter-spacing: 1px;
+}
+
+.welcome button {
+  background-color:#3F8DBF;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* MAIN */
+main {
+  background-color: #e6e8ee;
+}
+
+/* -----------------> SERVICES */
+
+
+.services {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0px;
+
+  border-bottom: 1px solid rgba(148, 148, 148, 0.72);
+}
+
+.service {
+  text-align: center;
+  width: 230px;
+}
+.service h4 {
+  margin-bottom: 10px;
+}
+.service p {
+  color: #616161;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+.icon {
+  margin: 0px auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lamp {
+  background-color: #9D9ABF;
+}
+.camera {
+  background-color:#E8C04F
+}
+.clock {
+  background-color:#D2514B
+}
+.liquid{
+  background-color:#66A3C6
+}
+
+/* -----------------------> WORKS */
+.works-section {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.works-section h3 {
+  margin-bottom: 10px;
+}
+.works {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.work {
+  max-width: 340px;
+  margin: 20px 0;
+}
+.work img {
+  max-width: 100%;
+  margin-bottom: 12px;
+}
+.work h4 {
+  margin-bottom: 3px;
+}
+.work .name {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: rgb(66, 66, 66);
+  margin-bottom: 10px;
+}
+
+.work .info {
+  line-height: 1.7;
+}
+
+/* -------------> TESTIMONIALS */
+.testimonials {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 50px 0px;
+}
+.test {
+  max-width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+.test  span {
+  font-size: 50px;
+  color: #4E4E4E;
+}
+.test p {
+  color: #4E4E4E;
+  font-size: 1.25rem;
+}
+
+/* ------------------> FOOTER */
+footer {
+  background-color: black;
+  padding: 50px 3%;
+  font-size: 0.9rem;
+  color: #CACACA;
+}
+
+.wrap-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.one {
+  width: 250px;
+  margin-bottom: 30px;
+}
+.one h4 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+.one p {
+  line-height: 1.6;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.one .date {
+  line-height: unset;
+  font-size: 0.87em;
+  display: block;
+}
+
+.img-p {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.img-p img {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.img-p p {
+  margin-bottom: 0px;
+}
+
+.with-mb p {
+  margin-bottom: 15px;
+}
+
+/* meida */
+@media screen and (max-width: 900px) {
+   .nav-links {
+     display: none;
+   }
+   .navigation {
+     height: 60px;
+   }
+   .slider {
+     height: calc(100vh - 60px);
+   }
+   .navigation,
+   .welcome {
+     font-size: 0.7rem;
+   }
+}
